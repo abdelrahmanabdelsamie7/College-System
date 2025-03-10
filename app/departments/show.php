@@ -1,17 +1,17 @@
 <?php
 // Styling 
-include_once '../../shared/header.php' ; 
-include_once '../../shared/navbar.php' ; 
+include_once '../../shared/header.php';
+include_once '../../shared/navbar.php';
 // From Vendor To Get Connection Of Database
-include_once '../../vendor/config.php' ;
+include_once '../../vendor/config.php';
 
 // Select  Department ->  SELECT * FROM `departments` WHERE `id` = id; 
-if(isset($_GET['id'] )){
-    $id = $_GET['id'] ; 
-$selectDepartment = "SELECT * FROM `departments` WHERE `id` = '$id'" ; 
-$department = mysqli_query($connection , $selectDepartment);
-$departmentData = mysqli_fetch_assoc($department) ; 
-} 
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    $selectDepartment = "SELECT * FROM `departments` WHERE `id` = '$id'";
+    $department = mysqli_query($connection, $selectDepartment);
+    $departmentData = mysqli_fetch_assoc($department);
+}
 
 
 ?>
@@ -29,5 +29,5 @@ $departmentData = mysqli_fetch_assoc($department) ;
 </section>
 
 <?php
-include_once '../../shared/script.php' ; 
+include_once '../../shared/script.php';
 ?>

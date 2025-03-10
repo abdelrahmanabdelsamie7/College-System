@@ -16,7 +16,9 @@
                      <li class="nav-item">
                          <a class="nav-link" href="/College-System/app/departments">Departments</a>
                      </li>
-
+                     <li class="nav-item">
+                         <a class="nav-link" href="/College-System/app/instructors">Instructors</a>
+                     </li>
                  </ul>
 
              </div>
